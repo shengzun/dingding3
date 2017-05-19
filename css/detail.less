@@ -1,0 +1,93 @@
+body,html{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.detail-body{
+  height: 100%;
+  overflow-y: auto;
+}
+
+.teacher{
+  .teacher-head{
+    font-size: 14px;
+      .p-left{
+        width:2.026666rem;
+        height: 0.5333rem;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        line-height:0.5333rem;
+        background: url("../images/detail/1.png") center center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+      }
+    .p-right{
+
+    }
+  }
+  .teacher-body{
+    height: 2.93333rem;
+    img{
+      max-height: 2.93333rem;
+    }
+    .p-left{
+      width: 48%;
+    }
+    .p-right{
+      width: 48%;
+
+    }
+  }
+}
+.service{
+  padding: 0.26666rem 0 0.36rem;
+  .service-li{
+    width: 2.16rem;
+    height: 0.6rem;
+    padding: 2px;
+    margin: 0 1rem 0.3rem 0;
+    line-height: 0.45rem;
+    .p-l{
+
+      width: 23%;
+      color: #ffffff;
+    }
+    .p-r{
+      width: 77%;
+      color: #333;
+      background: #fff;
+      height: 100%;
+    }
+    &.last{
+      margin-right: 0;
+    }
+  }
+  .ques{
+    li{
+      margin-bottom: 0.2rem;
+      padding-left: 0.3rem;
+      position: relative;
+    }
+    li:after{
+      content:"";
+      width: 0.2rem;
+      height: 0.2rem;
+      position: absolute;
+      display:block;
+      background:#FFD600;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      transform: -webkit-translateY(-50%);
+      box-shadow: 0 0 10px #FFD600;
+    }
+  }
+}
+@media screen and (device-width:320px){
+  .teacher .teacher-head .p-left{
+    font-size: 12px;
+  }
+}

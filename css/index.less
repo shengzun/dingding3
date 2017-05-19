@@ -1,0 +1,107 @@
+body,html{
+  overflow-x: hidden;
+}
+.idea{
+  height: 1.2rem;
+ /* background:url("../images/index/nav-1.png") center center no-repeat;
+  background-size:contain ;
+  -webkit-background-size: contain ;*/
+  img{
+    max-width: 53%;
+    max-height: 100%;
+    &.yin{
+      max-width: 58.9334%;
+    }
+  }
+}
+.idea-main{
+  height: 4rem;
+  margin-bottom: 0.333rem;
+  &.last{
+    margin-bottom: 0;
+  }
+  .p-left{
+    width: 68%;
+    height: 100%;
+
+  }
+  .p-right{
+    width:32%;
+    height: 100%;
+    padding:1.41333rem  0.3rem 0  0.3333rem ;
+
+    .arrow{
+      font-size: 16px;
+      background:url("../images/index/nav-right.png") center right no-repeat;
+      background-size: contain;
+      -webkit-background-size: contain;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.jiao{
+  height: 5.6rem;
+  padding: 0.2rem 0;
+  position: relative;
+  ul{
+    width: 100%;
+    height: 100%;
+  }
+  li{
+    position: absolute;
+    top: 50%;
+  }
+}
+.banner-img{
+  padding: 0.26667rem  0.4rem;
+  .banner-info{
+    width:100%;
+    height: 1.8667rem;
+    border-radius:5px;
+    background:#FFD77A ;
+    background: linear-gradient(left , #FFD77A , #F6A742);
+    background: -webkit-linear-gradient(left , #FFD77A , #F6A742);
+    background: -ms-linear-gradient(left , #FFD77A , #F6A742);
+    background: -o-linear-gradient(left , #FFD77A , #F6A742);
+    background: -moz-linear-gradient(left , #FFD77A , #F6A742);
+  }
+}
+.promise{
+  margin-bottom: 0.2rem;
+  .promise-li{
+    width: 33.3333%;
+    float: left;
+    padding: 0.4rem 0;
+    height: 1.6133rem;
+    .p-left{
+      width: 30%;
+      padding-top: 0.2rem;
+      img{
+        max-width: 0.6667rem;
+      }
+    }
+    .p-right{
+      width: 67%;
+      h5{
+        font-weight: normal;
+        font-size: 12px;
+        margin-bottom: 6px;
+        color: #666;
+      }
+      p{
+        font-size: 10px;
+        color: #999;
+      }
+
+    }
+
+  }
+}
+
+@media screen and (device-width:320px){
+  .idea-main{
+    .p-right{
+      padding: 1.4rem 0.2rem 0 0.2rem;
+    }
+  }
+}

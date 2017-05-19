@@ -1,0 +1,375 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"]
+
+{ -webkit-appearance:none; resize: none;}
+input,select,button{
+  outline:none;
+}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+  display: block;
+}
+/** 重置表格元素 **/
+table {   border-collapse:collapse;
+  border-spacing:0;  }
+/* 图片自适应 */
+img {
+  max-width: 100%;
+  height: auto;
+  width:auto\9; /* ie8 */
+  -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,td,th,i{margin:0; padding:0; border:none;font-size: 16px; }
+body{font-family: Microsoft YaHei,'宋体',Tahoma,Arial,sans-serif; color:#999;font-size: 16px; background-color:#fff;}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+
+a{text-decoration:none; color:#999; font-family: '微软雅黑',Microsoft YaHei,Tahoma,Arial,sans-serif;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none;}
+button:active{
+  opacity: 0.8;
+}
+*{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.w86{
+  width: 86%;
+  margin:  0 auto;
+}
+/*浮动*/
+.p-clear:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.p-clear{zoom:1;}
+.p-left{
+  float: left;
+}
+.p-right{
+  float: right;
+}
+
+/*边*/
+.p-border-b{
+  border-bottom: 1px solid #E2E2E2;
+}
+.p-border-t{
+  border-top: 1px solid #E2E2E2;
+}
+.p-border-r{
+  border-right: 1px solid #E2E2E2;
+}
+.p-border-l{
+  border-left: 1px solid #E2E2E2;
+}
+/*文字位置*/
+.p-text-left{
+  text-align: left;
+}
+.p-text-right{
+  text-align: right;
+}
+.p-text-center{
+  text-align: center;
+}
+/*圆角*/
+.p-radius{
+  border-radius: 5px;
+}
+/*内边距*/
+.p-padding-t{
+  padding-top:1.17333rem
+}
+.p-padding-t-b{
+  padding:1.17333rem 0 1.30rem;
+}
+.p-padding-a{
+  padding:0.21333rem 0.346666rem;
+}
+.p-padding{
+  padding: 0.4rem;
+}
+.p-padding-s{
+  padding: 0.2rem  0;
+}
+.p-padding-lr{
+  padding: 0 0.4rem 0.4rem;
+}
+.p-padding-btn{
+  padding: 0.13rem 0.26rem;
+}
+/*外边距*/
+.p-margin-b-l{
+  margin-bottom: 0.2rem;
+}
+.p-margin-b-ll{
+  margin-bottom: 0.32rem;
+}
+.p-margin-b{
+  margin-bottom:10px ;
+}
+.p-margin-r{
+  margin-right: 10px;
+}
+.p-m-b{
+  margin-bottom: 0.6rem;
+}
+.p-m-t{
+  margin-top: 0.6rem;
+}
+
+/*文字景色*/
+.p-font-white{
+  color:#fff;
+}
+.p-font-blue{
+  color:#2f90f8;
+}
+.p-font-red{
+  color: #F07261;
+}
+.p-font-gray{
+  color: #999;
+}
+.p-font-deep-gray{
+  color: #333;
+}
+/*文字*/
+.p-font-weight{
+  font-weight:700;
+}
+.p-font-l{
+  font-size: 18px;
+}
+.p-font-sm{
+  font-size: 14px;
+}
+.p-font-ssm{
+  font-size: 12px;
+}
+.p-font-ssms{
+  font-size: 10px;
+}
+
+
+/*背景色*/
+
+/*//黄色*/
+.p-bg-white{
+  background: #fff;
+}
+.p-bg-yellow{
+  background:#FFD600;
+}
+.p-bg-cheng{
+  background: #E16F3D;
+}
+.p-bg-red{
+  background: #DF5757;
+}
+.p-bg-blue{
+  background:#67B4FC;
+}
+.p-bg-gray{
+  background:#F8F8F8;
+}
+/*头部*/
+.p-head{
+  width: 100%;
+  height:1.17333rem ;
+  line-height:1.17333rem ;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 99;
+  font-size: 20px;
+  .p-head-icon{
+
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+  }
+  .p-head-back{
+    font-size: 18px;
+    left: 1rem;
+    font-weight: normal;
+
+  }
+  .p-head-left{
+    width: 0.32rem;
+    left: 0.4rem;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 4.26666rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*标题*/
+.p-nav{
+  padding:0.213rem   0.8rem;
+  font-size: 16px;
+  color: #333333;
+  span{
+
+    padding-left:8px;
+    border-left: 4px solid #F5D532;
+  }
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 0.3rem;
+  }
+}
+/*底*/
+.p-footer{
+  height: 1.30666rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  .p-inline{
+    width: 33.33%;
+    line-height: 1.30666rem;
+    color: #333;
+    &.on{
+      color: #fff;
+      background:#FFD600;
+    }
+  }
+  dl{
+    width: 25%;
+    color: #999999;
+    font-size: 10px;
+    padding-top:5px;
+    img {
+      max-width: 0.5rem;
+    }
+    &.on{
+      color: #FFD600;
+    }
+  }
+  &.p-bg-yellow{
+    background:#FFD600;
+    color: #fff;
+    line-height:1.30666rem;
+  }
+}
+/*弹窗*/
+.popup{
+  .popup-img{
+    width: 95%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform: -webkit-translate(-50%,-50%);
+  }
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(34,34,34,0.4);
+  position: fixed;
+  z-index: 9999;
+
+  top:0;
+  display: none;
+  left: 0;
+  .popup-body{
+    z-index: 10000;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .ul-two{
+      display: none;
+
+    }
+    li{
+      padding:0.4rem 0.42rem;
+      .close{
+        width: 0.45rem;
+        margin-top: -1rem;
+      }
+      .shu{
+        min-width: 5rem;
+      }
+      .p-inline{
+        width: 30%;
+        padding:0.2rem 0.32rem;
+        margin: 0 1.5%;
+        text-align: center;
+        border-radius: 5px;
+        color: #333;
+        float: left;
+        &.on{
+          background: #FED500;
+          color: #fff;
+        }
+      }
+      .p-inline-s{
+        width: 20%;
+        margin-bottom: 1.5%;
+      }
+      .ji{
+        padding:0.1rem  0.25rem ;
+        display: inline-block;
+        background: #F5F5F5;
+
+        &:focus,
+        &:hover{
+          background: #FAFAFA;
+        }
+      }
+
+    }
+    .minli{
+      height: 0.2rem;
+      padding: 0;
+    }
+    &.hscroll{
+     height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+}
+
