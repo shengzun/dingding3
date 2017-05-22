@@ -37,6 +37,22 @@
   display: block;
   left: 100%;
 }
+.ding .on-xia.rang:before {
+  content: '';
+  position: absolute;
+  width: 2.1rem;
+  height: 1px;
+  background: #CCCCCC;
+  top: 50%;
+  display: block;
+  left: -2.1rem;
+}
+.ding .blue.on-xia.rang:before {
+  background: #2F90F8;
+}
+.ding .red.on-xia.rang:before {
+  background: #F07261;
+}
 .ding .blue.on.rang:before {
   background: #2F90F8;
 }
@@ -46,7 +62,7 @@
 .ding .ons.rang:before {
   content: '';
   position: absolute;
-  height: 1.2rem;
+  height: 1.1rem;
   width: 0.6rem;
   top: 0.2rem;
   display: block;
@@ -83,4 +99,13 @@
 }
 .ding .rang.b:after {
   bottom: -24px;
+}
+.own .p-left {
+  width: 25%;
+}
+.own .p-right {
+  width: 75%;
+}
+.own .p-right .form-sel {
+  width: 100%;
 }

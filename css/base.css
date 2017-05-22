@@ -155,6 +155,10 @@ ul,
 ol {
   list-style: none;
 }
+textarea {
+  resize: none;
+  outline: none;
+}
 h1,
 h2,
 h3,
@@ -244,6 +248,9 @@ button:active {
 .p-padding-btn {
   padding: 0.13rem 0.26rem;
 }
+.p-p {
+  padding: 0.6rem 0.4rem 0;
+}
 /*外边距*/
 .p-margin-b-l {
   margin-bottom: 0.2rem;
@@ -263,6 +270,9 @@ button:active {
 .p-m-t {
   margin-top: 0.6rem;
 }
+.pmb-t {
+  margin-top: 0.2rem;
+}
 /*文字景色*/
 .p-font-white {
   color: #fff;
@@ -276,12 +286,18 @@ button:active {
 .p-font-gray {
   color: #999;
 }
+.p-font-middle-gray {
+  color: #666;
+}
 .p-font-deep-gray {
   color: #333;
 }
+.p-font-c {
+  color: #ccc;
+}
 /*文字*/
 .p-font-weight {
-  font-weight: 700;
+  font-weight: 500;
 }
 .p-font-l {
   font-size: 18px;
@@ -314,6 +330,9 @@ button:active {
 }
 .p-bg-gray {
   background: #F8F8F8;
+}
+.p-bg-btn {
+  background: #E4E4E4;
 }
 /*头部*/
 .p-head {
@@ -425,6 +444,56 @@ button:active {
   top: 0;
   display: none;
   left: 0;
+}
+.popup .tui-body {
+  padding: 1.4rem 0.4rem 0.6rem;
+}
+.popup .fail-popup {
+  background: #fff;
+  width: 7.2rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -o-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  border-radius: 10px;
+  color: #333;
+  font-size: 14px;
+}
+.popup .fail-popup .a {
+  line-height: 0.6rem;
+  margin-bottom: 5px;
+}
+.popup .fail-popup .manyi {
+  padding: 0rem 0.4rem 1rem;
+  position: relative;
+}
+.popup .fail-popup .manyi .errinfo {
+  position: absolute;
+  color: #F04631;
+  font-size: 14px;
+  padding-left: 8%;
+  bottom: 0.2rem;
+}
+.popup .fail-popup .manyi-left {
+  width: 8%;
+}
+.popup .fail-popup .manyi-right {
+  width: 90%;
+  color: #ccc;
+}
+.popup .fail-popup .tui-btn {
+  line-height: 1.25rem;
+}
+.popup .fail-popup .tui-btn .p-left {
+  width: 50%;
+}
+.popup .fail-popup .tui-btn .p-right {
+  width: 50%;
 }
 .popup .popup-img {
   width: 95%;
