@@ -109,3 +109,36 @@
 .own .p-right .form-sel {
   width: 100%;
 }
+.own-biao {
+  padding: 1.13rem 0;
+  background: #333;
+  color: #ffd600;
+  padding-left: 0.4rem;
+}
+.own-biao-r img {
+  max-width: 0.213rem;
+}
+.bang .bang_icon {
+  width: 0.64rem;
+  height: 0.64rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+.bang .wen {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bang .bang-left {
+  width: 7.8rem;
+  display: inline-block;
+}
+.bang .bang-left .bang-l {
+  width: 50%;
+}
+.bang .bang-left .bang-r {
+  width: 50%;
+}
+.bang .p-right img {
+  max-width: 0.213rem;
+}
