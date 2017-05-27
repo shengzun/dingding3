@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script async src="js/flexible.js"></script>
 
 </head>
@@ -165,24 +166,24 @@
         全套服务体系
     </span>
 </div>
-<div class="jiao">
-    <!--<ul >
-        <li class="li">
-            <a href="javascript:;">
-                <img src="images/a1.png" alt="">
-            </a>
-        </li>
-        <li class="li">
-            <a href="javascript:;">
-                <img src="images/a1.png" alt="">
-            </a>
-        </li>
-        <li class="li">
-            <a href="javascript:;">
-                <img src="images/a1.png" alt="">
-            </a>
-        </li>
-    </ul>-->
+<div id="dg-container" class="dg-container">
+    <div class="dg-wrapper">
+        <a href="bang-zhang.html">
+            <img src="images/banner/1.png" alt="">
+        </a>
+        <a href="bang-gao.html">
+            <img src="images/banner/2.png" alt="">
+        </a>
+        <a href="bang-tui.html">
+            <img src="images/banner/3.png" alt="">
+        </a>
+        <a href="bang-xing.html">
+            <img src="images/banner/4.png" alt="">
+        </a>
+        <a href="bang-sheng.html">
+            <img src="images/banner/5.png" alt="">
+        </a>
+    </div>
 </div>
 <!--单-->
 <div class="banner-img p-bg-gray">
@@ -279,7 +280,8 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.min.js"></script>
-
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.gallery.js"></script>
 <script>
 
     var swiper = new Swiper('.swiper-container', {
@@ -287,6 +289,9 @@
         paginationClickable: false,
         autoplay:3000,
         loop : true,
+    });
+    $('#dg-container').gallery({
+        autoplay	:	true
     });
 </script>
 </body>
