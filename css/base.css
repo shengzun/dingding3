@@ -620,3 +620,11 @@ button:active {
 .popup .btn-youhui img{
   max-width: 3.66667rem;
 }
+ .youhBtn{
+  position: fixed;
+  bottom: 0.8rem;
+  width: 100%;
+}
+.youhBtn img{
+  width: 3.8rem;
+}
