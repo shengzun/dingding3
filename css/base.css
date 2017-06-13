@@ -582,6 +582,7 @@ button:active {
 }
 /*遮罩层2*/
 .tilple {
+  width: 80%;
   padding: 0.7rem 0.5rem;
   position: fixed;
   z-index: 9999;
@@ -599,4 +600,23 @@ button:active {
 }
 .p-ding-right {
   width: 70%;
+}
+.popup .max-img{
+  width: 82%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+}
+.popup .close-img img{
+    max-width: 0.73333rem;
+
+}
+.popup .yh{
+  padding-top: 1rem;
+}
+.popup .btn-youhui img{
+  max-width: 3.66667rem;
 }

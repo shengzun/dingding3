@@ -10,10 +10,29 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipsternavtabs.css">
     <script async src="js/flexible.js"></script>
 
 </head>
+
+
+
 <body class="p-padding-t-b">
+<!-- 优惠券 -->
+<div id="youhui" class="popup" style="display:block;">
+   <div class="max-img">
+        <div class="p-text-right close-img p-m-b">
+            <img onclick="closeYouhui()" src="images/index/close.png" height="53" width="53" alt="">
+        </div>
+        <img src="images/index/jiang.png"  alt="">
+        <div class="p-text-center yh">
+            <a class="btn-youhui" href="javascript:;">
+                <img src="images/index/btn.png"  alt="">
+            </a>
+        </div>
+   </div>
+</div>
 <!--头-->
     <div class="p-head p-bg-yellow p-font-white p-text-center p-font-weight" >
         <img class="p-left p-head-icon p-head-left" src="images/head/head-right.png" alt="">
@@ -166,7 +185,7 @@
         全套服务体系
     </span>
 </div>
-<div id="dg-container" class="dg-container">
+<!-- <div id="dg-container" class="dg-container flipster">
     <div class="dg-wrapper">
         <a href="bang-zhang.html">
             <img src="images/banner/1.png" alt="">
@@ -184,7 +203,38 @@
             <img src="images/banner/5.png" alt="">
         </a>
     </div>
+</div> -->
+<div class="flipster">
+    <ul>
+        <li>
+            <a href="bang-zhang.html">
+                <img src="images/banner/1.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="bang-gao.html">
+                <img src="images/banner/2.png" alt="">
+             </a>
+        </li>
+         <li>
+            <a href="bang-tui.html">
+                <img src="images/banner/3.png" alt="">
+            </a>
+        </li>
+        <li>
+             <a href="bang-xing.html">
+                <img src="images/banner/4.png" alt="">
+             </a>
+        </li>
+        <li>
+            <a href="bang-sheng.html">
+                <img src="images/banner/5.png" alt="">
+            </a>
+        </li>
+    </ul>
 </div>
+
+
 <!--单-->
 <div class="banner-img p-bg-gray">
     <div class="banner-info">
@@ -278,21 +328,25 @@
     </div>
 
 </div>
+<div style="height:0.2rem;background:#F8F8F8;">
+    
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.gallery.js"></script>
-<script>
 
+<script src="js/jquery.flipster.js"></script>
+
+<script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: false,
         autoplay:3000,
         loop : true,
     });
-    $('#dg-container').gallery({
-        autoplay	:	true
-    });
+    function closeYouhui(){
+        $("#youhui").hide();
+    }
+    $(".flipster").flipster({ style: 'carousel', enableTouch:true,enableMousewheel:false});
 </script>
 </body>
 </html>
